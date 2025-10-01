@@ -1,0 +1,155 @@
+
+body
+{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-family: 'Automatic';
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+    
+
+}
+
+header
+{
+    background-color: #cc9dc4;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-size: 80px;
+    color: rgb(185, 78, 144);
+    margin: 0;
+}
+h2
+{
+    font-size: 30px;
+    color: rgb(203, 129, 26);
+    margin: 0;
+}
+h3
+{
+    font-size: 30px;
+    color: rgb(61, 124, 188);
+    margin: 0;
+}
+h4
+{
+    font-size: 30px;
+    color: rgb(138, 50, 155);
+    margin: 0;
+}
+h5
+{
+    font-size: 30px;
+    color: rgb(94, 146, 34);
+    margin: 0;
+}
+main
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #ede88c;
+text-align: center;
+grid-area: main;
+padding: 25px;
+justify-content: center;
+
+}
+
+footer {
+
+    background-color: #71aac1;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box
+{
+    background-color: rgb(121, 163, 176);
+    height: 300px;
+    width: 400px;
+    margin: 20px auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.logo-img {
+    max-width: 200%;
+    max-height: 200%;
+}
+
+
+.top-img {
+    height: 300px;
+    width: 400px;
+    margin: 20px auto;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.text-box {
+    overflow: auto;
+    max-width: 800px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+@media (max-width: 480px)
+{
+    h1{
+        font-size: 32px;
+    }
+    .logo-box {
+        width: 90%;
+        height: 200px;
+    }
+    .logo-img {
+        max-width: 80%;
+    }
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 40px;
+    }
+    .logo-box {
+        width: 80%;
+        height: 250px;
+    }
+    .logo-img {
+        max-width: 85%;
+        }
+
+        footer {
+            font-size: 13px;
+            padding: 12px;
+        }
+}
